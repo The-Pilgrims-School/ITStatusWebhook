@@ -2,6 +2,6 @@
 
 $config = (Get-Content .\config.json | ConvertFrom-Json)
 
-$replHealth = Get-VMReplication | Select-Object Name,ReplicationHealth | ConvertTo-Csv
+$replHealth = Get-VMReplication | Select-Object Name,ReplicationHealth,State,LastReplicationTime | ConvertTo-Json
 
 .\New-AlertToMicrosoftTeams.ps1 -Text $replHealth -Uri $config.StatusWebHookURI -Proxy $config.Proxy

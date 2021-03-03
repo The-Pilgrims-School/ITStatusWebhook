@@ -1,3 +1,4 @@
 {
-    
+    "Proxy": "http://some.proxy.server:8080/",
+    "StatusWebHookURI": "https://some-web-hook/"
 }

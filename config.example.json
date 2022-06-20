@@ -1,4 +1,6 @@
 {
-    "Proxy": "http://some.proxy.server:8080/",
-    "StatusWebHookURI": "https://some-web-hook/"
+    "StatusWebHookURI": "https://some-web-hook/",
+    "AlertWebHookURI": "",
+    "PushoverToken": "application key",
+    "PushoverUser": "user key"
 }
